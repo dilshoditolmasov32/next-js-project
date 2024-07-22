@@ -43,7 +43,7 @@ const Index = () => {
         <div className="flex flex-wrap gap-[30px] justify-around pt-14 ">
          {
             boxs?.map((item, index)=>(
-                <div className="bg-[#3B3B3B] rounded-[20px] max-w-[240px] w-full max-xs:w-[150px] max-xs:mx-2">
+                <div className="bg-[#3B3B3B] rounded-[20px] max-w-[240px] w-full max-xs:w-[150px] max-xs:mx-2" key={index}>
                 <Image src={item.image} alt="icons"/>
                 <p className="py-5 px-[30px] font-bold text-white ">{item.title} </p>
             </div>
